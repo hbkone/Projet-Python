@@ -17,7 +17,7 @@ questions_data = [
 
 # Crée des instances de Question
 questions = [Question(text, options, correct_option) for text, options, correct_option in questions_data]
-options = [Question(text, options, correct_option) for text, options, correct_option in questions_data]
+options = [Question(text, options, correct_option) for text,options, correct_option in questions_data]
 # Initialise et exécute la correction
 correction = Correction(questions)
 correction.shuffle_questions()
@@ -26,13 +26,4 @@ correction.run_correction()
 correction.show_correction() 
 
 
-#correction = Correction(questions)
-#correction.display_correction()
 
-#quiz.display_correction()
-#correction.display_correct_answers()
-# Affiche le corrigé
-#print("\n=== Corrigé ===")
-#for i, (question, user_answer) in enumerate(zip(correction.questions, correction.user_answers), start=1):
- #   correct_answer = question.correct_option.upper()
-  #  print(f"Question {i}: {question.text} - Votre réponse: {user_answer.upper()}, Correcte: {correct_answer}")

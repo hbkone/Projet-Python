@@ -15,8 +15,7 @@ class Correction:
 
     def shuffle_questions(self):
         random.shuffle(self.questions)
-    #def shuffle_options(self):
-     #   random.shuffle(self.options)
+    
 
     def run_correction(self):
         for question in self.questions:
@@ -37,6 +36,7 @@ class Correction:
                 print(f"Mauvaise réponse. La réponse correcte était: {question.correct_option.upper()}.\n")
 
         print(f"Votre score final est: {self.score}/{len(self.questions)}")
+
 #afficher la correction à la fin du quiz
     def show_correction(self):
         print("\n=== Corrigé ===")
